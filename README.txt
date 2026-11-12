@@ -1,13 +1,6 @@
-QUEVEDO COMMAND - INSTALLATION
-
-This is a working device-local family dashboard prototype. It does NOT synchronize data across family phones.
-
-To install as a Home Screen web app:
-1. Upload ALL files in this folder to a static HTTPS host (e.g. GitHub Pages, Cloudflare Pages, Netlify).
-2. Open the resulting HTTPS link in Safari on each iPhone.
-3. Tap Share > Add to Home Screen > Add (or Open as Web App when offered).
-4. Each phone will have its OWN independent data. The family dashboard shows the five profiles stored on that phone only.
-
-For real cross-device family progress, add authenticated accounts and a shared cloud database with access rules. That integration is NOT part of this prototype.
-
-Data can be exported/imported manually using the backup buttons. Browser storage may be cleared, so export backups.
+BRAVO 6 FULL CLOUD VERSION
+All four tabs preserved. Upload ALL files to GitHub repository root and replace old versions.
+Cloud sign-in required. All four tabs sync as a single private user document.
+Existing device-local data intentionally not migrated.
+Email confirmation redirects may require adding your GitHub Pages URL under Supabase Authentication > URL Configuration > Redirect URLs.
+Check for ✓ Synced before closing app. Changes from other device are polled every 15 seconds.
