@@ -1,7 +1,7 @@
 {
-  "name": "Quevedo Command | Family Habits",
-  "short_name": "Quevedo Command",
-  "description": "Family habit checklist and progress dashboard",
+  "name": "Bravo 6",
+  "short_name": "Bravo 6",
+  "description": "Personal command center for daily habits, Mark'em tasks and important dates",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
