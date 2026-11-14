@@ -75,7 +75,7 @@ async function updateWeather(force=false){if(!force&&Date.now()-lastWeatherFetch
 document.getElementById('weatherRefresh').onclick=()=>updateWeather(true);updateWeather();setInterval(()=>updateWeather(),30*60*1000);
 let trendWindow=7;
 function metricTile(icon,label,value,source){return '<div class="commandMetric"><span class="metricIcon">'+icon+'</span><small>'+escape(label)+'</small><strong>'+escape(value)+'</strong><span class="metricSource">'+escape(source)+'</span></div>'}
-function renderGarminCards(){const target=document.getElementById('garminMetricCards');if(!target)return;const metrics=[['☾','Sleep Score','—'],['👣','Steps','—'],['💧','Water Intake','—']];target.innerHTML=metrics.map(m=>metricTile(m[0],m[1],m[2],'Awaiting Garmin sync')).join('')}
+function renderGarminCards(){const target=document.getElementById('garminMetricCards');if(!target)return;const metrics=[['☾','Sleep Score','—'],['<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle" aria-hidden="true"><path d="M4 16v-2.5A3.5 3.5 0 0 1 7.5 10H9v4.5A3.5 3.5 0 0 1 5.5 18H4z"/><path d="M15 9V6.5A3.5 3.5 0 0 1 18.5 3H20v4.5A3.5 3.5 0 0 1 16.5 11H15z"/><path d="M7 6h.01M9 5h.01M11 6h.01M18 15h.01M20 16h.01M22 18h.01"/></svg>','Steps','—'],['💧','Water Intake','—']];target.innerHTML=metrics.map(m=>metricTile(m[0],m[1],m[2],'Awaiting Garmin sync')).join('')}
 let homeTrendWindow=7;
 function renderHomeCharts(){
  const target=document.getElementById('homeCharts');if(!target)return;
